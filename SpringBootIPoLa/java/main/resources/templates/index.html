@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="/head :: head"></head>
+<body>
+
+	<div th:replace="/header :: header" />
+<!-- 	<div th:replace="/p/left :: left" /> -->
+	<div th:replace="/welcome :: index" />
+	<div th:replace="/footer :: footer" />
+
+	<!-- 	<frameset rows="20%,*"/> -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/ipo.js"></script>
+	<script>
+          
+          $(document).ready(function(){
+             if(${empty LoginOK}){
+            	 $('.logout').hide();
+                 $('.login').show();
+          }else{
+        	  $('.logout').show();
+              $('.login').hide();
+           
+          }
+       });
+        
+        </script>
+</body>
+</html>

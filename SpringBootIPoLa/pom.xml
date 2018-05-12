@@ -34,12 +34,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<!-- 添加 fastjson 依賴包 -->
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>fastjson</artifactId>
-			<version>1.2.33</version>
-		</dependency>
 		<!-- Springboot 热部署 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -48,6 +42,7 @@
 			<scope>true</scope>
 		</dependency>
 
+		<!-- ===== Database ===== -->
 		<!-- 添加 MySQL 數據庫驅動依賴包 -->
 		<dependency>
 			<groupId>mysql</groupId>
@@ -57,7 +52,7 @@
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
 			<artifactId>mybatis-spring-boot-starter</artifactId>
-			<version>${mybatis-spring-boot}</version>
+			<version>1.3.0</version>
 		</dependency>
 		<!-- 分頁插件 -->
 		<dependency>
@@ -66,7 +61,20 @@
 			<version>4.1.0</version>
 		</dependency>
 
-		<!-- Junit -->
+		<!-- ===== front ===== -->
+		<!-- 添加 fastjson 依賴包 -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.33</version>
+		</dependency>
+		<!-- html 可選擇 thmleaf,freemarker,JSP -->
+		<!-- thmleaf模板依赖. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>

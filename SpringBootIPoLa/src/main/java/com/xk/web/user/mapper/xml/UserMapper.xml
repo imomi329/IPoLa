@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xk.web.user.mapper.UserMapper">
+
+	<!-- 編寫 insert 語句 -->
+	<insert id="insert" useGeneratedKeys="true" keyProperty="id">
+		INSERT INTO USER_ACCOUNT (ACCOUNT, PASSWORD) VALUES (#{account}, #{password})
+	</insert>
+	
+	<!-- 編寫 update 語句 -->
+<!-- 	<update id="update"> -->
+<!-- 		UPDATE DEMO SET NAME = #{name} WHERE ID = #{id} -->
+<!-- 	</update> -->
+	
+<!-- 	<delete id="delete"> -->
+<!-- 		DELETE FROM DEMO WHERE ID = #{id} -->
+<!-- 		UPDATE DEMO SET STATUS = #{status} WHERE ID = #{id} -->
+<!-- 	</delete> -->
+
+	<!-- base result map bean create like this -->
+<!-- 	<resultMap type="com.finsage.web.sample.model.Demo" id="baseRM"> -->
+<!-- 		<id property="id" column="id"></id> -->
+<!-- 		<result property="account" column="account"/> -->
+<!-- 		<result property="password" column="password"/> -->
+<!-- 		<result property="name" column="name"/> -->
+<!-- 	</resultMap> -->
+<!-- 	<select id="select" resultMap="baseRM"> -->
+<!-- 		SELECT * FROM DEMO -->
+<!-- 	</select> -->
+	
+<!-- 	<select id="selectById" resultMap="baseRM"> -->
+<!-- 		SELECT * FROM DEMO WHERE ID = #{id} -->
+<!-- 	</select> -->
+
+</mapper>
